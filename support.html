@@ -5,49 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Seolapin Support</title>
   <style>
-    :root {
-      color-scheme: light dark;
-      --bg: #fffaf0;
-      --surface: #ffffff;
-      --ink: #241b13;
-      --muted: #6f6256;
-      --line: #e7d9c8;
-      --accent: #9f1f16;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #15110d;
-        --surface: #211a14;
-        --ink: #f7efe4;
-        --muted: #c9b9a6;
-        --line: #3a2d22;
-        --accent: #f06f5d;
-      }
-    }
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--ink);
-      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
-      line-height: 1.65;
-    }
-    main {
-      max-width: 920px;
-      margin: 0 auto;
-      padding: 44px 20px 64px;
-    }
-    header, section {
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: 22px;
-      padding: 28px;
-      margin-bottom: 18px;
-      box-shadow: 0 16px 40px rgba(40, 24, 10, 0.06);
-    }
-    h1, h2 {
-      line-height: 1.2;
-      margin: 0 0 14px;
-    }
+    :root { color-scheme: light dark; --bg: #fffaf0; --surface: #ffffff; --ink: #241b13; --muted: #6f6256; --line: #e7d9c8; --accent: #9f1f16; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #15110d; --surface: #211a14; --ink: #f7efe4; --muted: #c9b9a6; --line: #3a2d22; --accent: #f06f5d; } }
+    body { margin: 0; background: var(--bg); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; line-height: 1.65; }
+    main { max-width: 920px; margin: 0 auto; padding: 44px 20px 64px; }
+    header, section { background: var(--surface); border: 1px solid var(--line); border-radius: 22px; padding: 28px; margin-bottom: 18px; box-shadow: 0 16px 40px rgba(40, 24, 10, 0.06); }
+    h1, h2 { line-height: 1.2; margin: 0 0 14px; }
     h1 { font-size: clamp(2rem, 5vw, 3.25rem); }
     h2 { font-size: 1.35rem; color: var(--accent); }
     p { margin: 0 0 12px; }
@@ -63,56 +26,62 @@
   <main>
     <header>
       <h1>Seolapin Support</h1>
-      <p class="muted">Support for Seolapin, an iPad HWP/HWPX viewer and draft editor.</p>
-      <p>For help, bug reports, and App Store review support, contact: <a href="mailto:shteosis@gmail.com">shteosis@gmail.com</a></p>
+      <p class="muted">Support for Seolapin, an iPad HWP/HWPX document viewer and light text editor.</p>
+      <p>Canonical URL: <a href="https://facta-leopard.github.io/Seolapin/support/">https://facta-leopard.github.io/Seolapin/support/</a></p>
       <div class="divider"></div>
       <p class="lang">Seolapin 지원</p>
-      <p class="muted">iPad용 HWP/HWPX 보기 및 초안 편집 앱 Seolapin 지원 페이지입니다.</p>
-      <p>사용 문의, 오류 제보, App Store 심사 관련 문의: <a href="mailto:shteosis@gmail.com">shteosis@gmail.com</a></p>
+      <p class="muted">iPad용 HWP/HWPX 문서 보기 및 간단한 문자열 편집 앱 Seolapin 지원 페이지입니다.</p>
+      <p>대표 URL: <a href="https://facta-leopard.github.io/Seolapin/support/">https://facta-leopard.github.io/Seolapin/support/</a></p>
     </header>
+
+    <section>
+      <h2>Support Channels / 지원 채널</h2>
+      <p>Public issue tracker: <a href="https://github.com/Facta-Leopard/Seolapin/issues">GitHub Issues</a></p>
+      <p>Privacy policy: <a href="https://facta-leopard.github.io/Seolapin/privacy/">Seolapin Privacy Policy</a></p>
+      <div class="divider"></div>
+      <p>공개 이슈 트래커: <a href="https://github.com/Facta-Leopard/Seolapin/issues">GitHub Issues</a></p>
+      <p>개인정보 처리방침: <a href="https://facta-leopard.github.io/Seolapin/privacy/">Seolapin 개인정보 처리방침</a></p>
+    </section>
 
     <section>
       <h2>What to Include / 문의 시 포함할 내용</h2>
       <ul>
         <li>Device model and iPadOS version.</li>
         <li>Seolapin app version.</li>
-        <li>Document format, such as HWP, HWPX, PDF export, or Seolapin draft.</li>
+        <li>Document format, such as HWP, HWPX, PDF export, HWPX export, Seolapin Draft, or imported font.</li>
+        <li>Whether the file was read-only, locked, stored in Files or iCloud Drive, or opened from another app.</li>
+        <li>Whether AI assistance was available, unavailable, or produced an unexpected summary or answer.</li>
         <li>A short description of what you expected and what happened.</li>
-        <li>If possible, screenshots of non-sensitive screens. Do not send confidential documents unless specifically requested and you have permission to share them.</li>
+        <li>A redacted screenshot if it does not reveal private document content.</li>
       </ul>
       <div class="divider"></div>
       <ul>
         <li>사용 기기 모델과 iPadOS 버전.</li>
         <li>Seolapin 앱 버전.</li>
-        <li>HWP, HWPX, PDF 내보내기, Seolapin 초안 등 관련 문서 형식.</li>
+        <li>HWP, HWPX, PDF 내보내기, HWPX 내보내기, Seolapin Draft, 가져온 폰트 등 관련 형식.</li>
+        <li>파일이 읽기 전용인지, 잠금 상태인지, Files 앱 또는 iCloud Drive에 있는지, 다른 앱에서 열린 것인지.</li>
+        <li>AI 도우미가 사용 가능했는지, 사용할 수 없었는지, 예상과 다른 요약 또는 답변을 생성했는지.</li>
         <li>기대한 동작과 실제 발생한 동작의 간단한 설명.</li>
-        <li>가능한 경우 민감하지 않은 화면 스크린샷. 요청을 받았고 공유 권한이 있는 경우가 아니라면 기밀 문서를 보내지 마세요.</li>
+        <li>문서 내용이 노출되지 않도록 가린 스크린샷.</li>
       </ul>
     </section>
 
     <section>
       <h2>Known Scope / 지원 범위</h2>
       <p>Seolapin is built for iPadOS 26 or later. AI document assistant features require an Apple Intelligence-compatible iPad with Apple Intelligence enabled and the on-device model ready.</p>
-      <p>Some advanced HWP/HWPX layout objects may be flattened, omitted, or reported as diagnostics while compatibility support is expanded.</p>
+      <p>Some advanced HWP/HWPX layout objects, tables, images, or legacy file structures may be shown with limited formatting, diagnostics, or read-only behavior while compatibility support is expanded.</p>
       <div class="divider"></div>
       <p>Seolapin은 iPadOS 26 이상을 대상으로 합니다. AI 문서 도우미 기능은 Apple Intelligence 호환 iPad, Apple Intelligence 활성화, 준비된 온디바이스 모델이 필요합니다.</p>
-      <p>일부 고급 HWP/HWPX 조판 객체는 호환성 지원이 확장되는 동안 평탄화, 생략 또는 진단 항목으로 표시될 수 있습니다.</p>
+      <p>일부 고급 HWP/HWPX 조판 객체, 표, 이미지, 오래된 파일 구조는 호환성 지원이 확장되는 동안 제한된 서식, 진단 항목 또는 읽기 전용 동작으로 표시될 수 있습니다.</p>
     </section>
 
     <section>
       <h2>Privacy / 개인정보</h2>
-      <p>Review the privacy policy here: <a href="privacy-policy.html">Seolapin Privacy Policy</a></p>
       <p>Seolapin does not operate a separate document-processing server and does not upload document body text for document parsing, editing, export, or AI processing.</p>
+      <p>Do not upload confidential documents, private screenshots, personal identifiers, licensed fonts, AI prompts/outputs containing confidential content, or files you do not have permission to share in public GitHub Issues.</p>
       <div class="divider"></div>
-      <p>개인정보 처리방침: <a href="privacy-policy.html">Seolapin 개인정보 처리방침</a></p>
       <p>Seolapin은 별도의 문서 처리 서버를 운영하지 않으며, 문서 파싱, 편집, 내보내기 또는 AI 처리를 위해 문서 본문을 업로드하지 않습니다.</p>
-    </section>
-
-    <section>
-      <h2>Response / 답변</h2>
-      <p>Support requests are reviewed as availability permits. Response time may vary depending on issue complexity and App Store review status.</p>
-      <div class="divider"></div>
-      <p>지원 요청은 가능한 범위에서 검토합니다. 답변 시간은 문제의 복잡도와 App Store 심사 상태에 따라 달라질 수 있습니다.</p>
+      <p>공개 GitHub Issues에는 기밀 문서, 비공개 스크린샷, 개인 식별 정보, 라이선스가 있는 폰트, 기밀 내용이 포함된 AI 프롬프트/출력, 공유 권한이 없는 파일을 업로드하지 마십시오.</p>
     </section>
   </main>
 </body>
